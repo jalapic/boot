@@ -4,6 +4,7 @@ library(tidyverse)
 df <- read.csv("raw_data/cheese.csv")
 
 head(df)
+tail(df)
 
 p <- ggplot(df, aes(x=chol, y=sat_fat)) + 
   geom_point() +
